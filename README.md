@@ -1,7 +1,7 @@
 spritely
 ========
 
-Spritely is a tool for autogenerating simple placeholder game sprites from images found on the web. 
+Spritely is a tool for autogenerating simple placeholder game sprites from images found on the web. To see some example images, click here: www.gamesbyangelina.org/downloads/spritely/examples/spritelyexamples.png
 
 Usage
 =====
