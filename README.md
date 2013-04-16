@@ -10,6 +10,10 @@ You can interact with Spritely in three ways. First, you can run it as a .jar fi
 
 Secondly, you can run it from the command line. This gives you access to a few features I've not added to the UI yet (like setting the size of the output images) and also means you can more easily integrate it into projects not written in Java, for use automatically. www.gamesbyangelina.org/downloads/spritely/download-cli.php
 
+Here's an example call:
+
+`java -jar spritely-cli.jar -sgi -d 16 -n 1 -c winter wolf`
+
 Thirdly, you can simply bung the source code into your Java project, instantiate a Spritely() object, and use it in-code.
 
 I'm doing my best to maintain the project, but bear in mind that this doesn't relate directly to my day job, and I'm new to this whole releasing-tools-for-people schtick. I've tried to include some use cases so you can see what everything does, but although the code isn't commented I think Spritely is a fairly simple library. Picking it apart will probably tell you all you need to know, and this code is public domain if you want to improve it or add features!
