@@ -3,6 +3,8 @@ spritely
 
 Spritely is a tool for autogenerating simple placeholder game sprites from images found on the web. To see some example images, click here: www.gamesbyangelina.org/downloads/spritely/examples/spritelyexamples.png
 
+If you use Spritely for anything, from placeholders to a new genre of games, let me know! You don’t have to, of course, but it will put a smile on my face and also let me justify spending time on making it. I want to create more tools like this that spin off from my day job (where I research techniques for automatic game design). If I get lots of feedback I can show this off to people next time the funding nightmare comes back.
+
 Usage
 =====
 
