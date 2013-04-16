@@ -1,0 +1,15 @@
+            DO WHAT THE FUDGE YOU WANT TO PUBLIC LICENSE
+                    Version 2.01, January 2013
+
+ Original copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+ This modification made 2013 by Michael Cook <mike@gamesbyangelina.org>
+
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUDGE YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUDGE YOU WANT TO.
+
