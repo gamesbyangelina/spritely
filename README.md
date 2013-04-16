@@ -8,6 +8,9 @@ If you use Spritely for anything, from placeholders to a new genre of games, let
 Usage
 =====
 
+Different Ways Of Running Spritely
+--------
+
 You can interact with Spritely in three ways. First, you can run it as a .jar file and use my fairly rubbish UI. For a quick download of this version go here: www.gamesbyangelina.org/downloads/spritely/download.php
 
 Secondly, you can run it from the command line. This gives you access to a few features I've not added to the UI yet (like setting the size of the output images) and also means you can more easily integrate it into projects not written in Java, for use automatically. www.gamesbyangelina.org/downloads/spritely/download-cli.php
@@ -19,6 +22,15 @@ Here's an example call:
 Thirdly, you can simply bung the source code into your Java project, instantiate a Spritely() object, and use it in-code.
 
 I'm doing my best to maintain the project, but bear in mind that this doesn't relate directly to my day job, and I'm new to this whole releasing-tools-for-people schtick. I've tried to include some use cases so you can see what everything does, but although the code isn't commented I think Spritely is a fairly simple library. Picking it apart will probably tell you all you need to know, and this code is public domain if you want to improve it or add features!
+
+Recommended Usage
+--------
+
+There are three official image sources right now - Google Images, Wikimedia Commons and OpenClipArt. I've gotten good results from all of them, but there are caveats. Here are some tips for getting the best results:
+
+1. Use more general search terms where possible. You can go specific, but you won't get sprite-worthy results. "Margaret Thatcher" will output messier stuff than "politician", for example.
+2. OpenClipArt is the best image source right now. Wikimedia Commons is hit and miss (and disabled in the UI version) and Google Images is great, but there are rate-limiting issues that I haven't entirely worked around yet. Any help from contributors would be appreciated here. I get the user's local IP to pass as the request, but the referer is not set up properly. I need help here! OpenClipArt has great style in its results, and they're creative commons, so it's a double-win.
+3. Fewer images returned is faster, obviously, but if you're searching Google I recommend at least 2 or 3, because I use a mix of google search terms to try and get different kinds of sprites.
 
 License
 =======
