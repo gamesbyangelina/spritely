@@ -22,7 +22,7 @@ public class SpritelyDemo {
 		s.setSearchGoogleImages(true);
 		s.setSearchOpenClipart(true);
 		s.setSearchWikimediaCommons(false);
-		s.setOutputPath("/develop/workspace/spritely/images");
+		s.setOutputPath(System.getProperty("user.home"));
 		s.write(s.search());
 		
 		dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");

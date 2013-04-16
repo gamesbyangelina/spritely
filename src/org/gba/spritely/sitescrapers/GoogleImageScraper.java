@@ -74,7 +74,8 @@
  
      prefs += "&safe=active";
      
-     String ip = "109.144.197.160";
+     //You should put your IP address in here!
+     String ip = "";
  
      URL url = new URL("https://ajax.googleapis.com/ajax/services/search/images?safe=off&v=1.0" + 
        prefs + "&userip=" + ip + "&rsz=8&q=" + URLEncoder.encode(args, "UTF-8"));
