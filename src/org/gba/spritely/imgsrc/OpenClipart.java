@@ -12,7 +12,8 @@ import org.gba.spritely.sitescrapers.OpenClipartScraper;
 public class OpenClipart {
 	public static List<BufferedImage> searchOC(Spritely s) {
 		List<BufferedImage> urls = new LinkedList<BufferedImage>();
-		List<String> fresh_urls = OpenClipartScraper.findClipart(s.query, 0, 5);
+		int roundSize = 1;
+		List<String> fresh_urls = OpenClipartScraper.findClipart(s.query, 0, roundSize);
 
 		if(s.pickRandom){
 			Collections.shuffle(fresh_urls);
@@ -40,8 +41,8 @@ public class OpenClipart {
 
 			round++;
 			if (urls.size() < s.imagesPerSource) {
-				fresh_urls = OpenClipartScraper.findClipart(s.query, round * 5,
-						(round + 1) * 5);
+				fresh_urls = OpenClipartScraper.findClipart(s.query, round * roundSize,
+						(round + 1) * roundSize);
 				if (fresh_urls.size() == 0) {
 					return urls;
 				}
