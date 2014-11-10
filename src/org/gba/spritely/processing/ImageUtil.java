@@ -1,18 +1,27 @@
  package org.gba.spritely.processing;
  
  import java.awt.AlphaComposite;
- import java.awt.Graphics2D;
- import java.awt.Image;
- import java.awt.Toolkit;
- import java.awt.image.BufferedImage;
- import java.awt.image.FilteredImageSource;
- import java.awt.image.ImageFilter;
- import java.awt.image.ImageProducer;
- import java.awt.image.RGBImageFilter;
- import java.io.File;
- import java.io.IOException;
- import java.net.URL;
- import javax.imageio.ImageIO;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+import java.awt.image.FilteredImageSource;
+import java.awt.image.ImageFilter;
+import java.awt.image.ImageProducer;
+import java.awt.image.RGBImageFilter;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+
+import javax.imageio.ImageIO;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.client.LaxRedirectStrategy;
+import org.gba.spritely.sitescrapers.SSLBypass;
+import org.gba.spritely.sitescrapers.ScrapeUtils;
  
  public class ImageUtil
  {
@@ -22,7 +31,9 @@
      BufferedImage out = null;
      try {
        URL url = new URL(sUrl);
-       image = ImageIO.read(url);
+              
+       
+       image = ImageIO.read(ScrapeUtils.readURLLax(url));
        if (image == null)
          return null;
        if ((image.getWidth() > 1000) || (image.getHeight() > 1000))

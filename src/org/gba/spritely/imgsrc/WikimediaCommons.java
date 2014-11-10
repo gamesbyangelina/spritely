@@ -13,8 +13,8 @@ import org.gba.spritely.sitescrapers.WikimediaCommonsScraper;
  {
    public static List<BufferedImage> searchWMC(Spritely s)
    {
-     List urls = new LinkedList();
-     List fresh_urls = WikimediaCommonsScraper.searchWC(s.query, true);
+     List<BufferedImage> urls = new LinkedList<BufferedImage>();
+     List<String> fresh_urls = WikimediaCommonsScraper.searchWC(s.query, true);
      System.out.println("Searching Wikimedia Commons... " + fresh_urls.size() + " images found...");
      
      if(s.pickRandom){
@@ -26,9 +26,9 @@ import org.gba.spritely.sitescrapers.WikimediaCommonsScraper;
        if ((round + 1) * s.imagesPerSource > fresh_urls.size()) {
          return urls;
        }
-       List set = fresh_urls.subList(round * s.imagesPerSource, (round + 1) * s.imagesPerSource);
+       List<String> set = fresh_urls.subList(round * s.imagesPerSource, (round + 1) * s.imagesPerSource);
  
-       LinkedList results = new LinkedList();
+       List<BufferedImage> results = new LinkedList<BufferedImage>();
        for (BufferedImage image : ImageProcessing.filterForBorderless(set)) {
          results.add(ImageProcessing.reduceBackground(ImageProcessing.shrink(image, 96, 96), true));
        }

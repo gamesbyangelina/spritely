@@ -121,7 +121,7 @@ public class SpritelyUI extends JFrame implements ChangeListener{
         gBox = new JCheckBox(GOOG); gBox.setSelected(true);
         imageSearchPanel.add(gBox);
         wBox = new JCheckBox(WIKI);
-//        imageSearchPanel.add(wBox);
+        imageSearchPanel.add(wBox);
         oBox = new JCheckBox(OCA);
         imageSearchPanel.add(oBox);
         jl = new JLabel("Other Options");
